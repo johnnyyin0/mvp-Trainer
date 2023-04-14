@@ -3,7 +3,7 @@ import BodyMap from './BodyMap.jsx'
 
 function Body() {
     return(
-        <div id='Body'>
+        <div>
             <Title/>
             <BodyMap/>
         </div>
