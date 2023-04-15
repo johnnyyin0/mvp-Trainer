@@ -9,6 +9,8 @@ function ExcerciseList({muscleSelected}) {
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
                 <h1 className="text-3xl font-bold mb-10">Incline Bench Press</h1>
                 <h2 className="font-bold mb-5">Difficulty: Intermediate</h2>
@@ -16,6 +18,8 @@ function ExcerciseList({muscleSelected}) {
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -24,19 +28,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -45,19 +53,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -66,19 +78,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -87,19 +103,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -108,19 +128,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -129,19 +153,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -150,19 +178,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -171,19 +203,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -192,19 +228,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -213,19 +253,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -234,19 +278,23 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
@@ -255,19 +303,48 @@ function ExcerciseList({muscleSelected}) {
         return(
             <div className="items-center text-center">
                <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
-               <h1 className="text-3xl font-bold mb-10"></h1>
-               <h2 className="font-bold mb-5">Difficulty: </h2>
-               <iframe width="600" height="400" src="" className="mx-auto"></iframe>
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
-                <h1 className="text-3xl font-bold mb-10"></h1>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
                 <h2 className="font-bold mb-5">Difficulty: </h2>
-                <iframe width="600" height="400" src="" className="mx-auto"></iframe>                
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
                 <ul class="mt-10 text-2xl mb-10">
                     <li><a>1. Hello</a></li>
                     <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
+                </ul>
+            </div>
+        )
+    }
+    if(muscleSelected === 'LATS') {
+        return(
+            <div className="items-center text-center">
+               <h1 className="text-5xl font-bold mb-10">{muscleSelected}</h1> 
+               <h1 className="text-3xl font-bold mb-10">EXERCISE 1</h1>
+               <h2 className="font-bold mb-5">Difficulty: Begineer</h2>
+               <iframe width="600" height="400" src="https://www.youtube.com/embed/vcBig73ojpE" className="mx-auto"></iframe>
+                <ul class="mt-10 text-2xl mb-10">
+                    <li><a>1. Hello</a></li>
+                    <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
+                </ul>
+                <h1 className="text-3xl font-bold mb-10">EXERCISE 2</h1>
+                <h2 className="font-bold mb-5">Difficulty: </h2>
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/SrqOu55lrYU" className="mx-auto"></iframe>                
+                <ul class="mt-10 text-2xl mb-10">
+                    <li><a>1. Hello</a></li>
+                    <li><a>2. World</a></li>
+                    <li><a>3. You're</a></li>
+                    <li><a>4. Awesome</a></li>
                 </ul>
             </div>
         )
