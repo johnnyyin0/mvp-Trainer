@@ -6,7 +6,9 @@ function Navbar ({setTheme}) {
     return (
       <div className="navbar bg-primary" >
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-2xl text-white"><b>TRAINER</b></a>
+          <a className="btn btn-ghost normal-case text-2xl">
+          <img src='src/assets/dumbbell.png' alt='dumbbell logo' style={{height:'30px', width:'30px', marginRight: '5px'}}></img>
+          <b>TRAINER</b></a>
         </div>
         <div className="flex-none gap-2">
         <label className='swap swap-rotate fill-slate-200 hover:fill-amber-300'>
@@ -23,7 +25,6 @@ function Navbar ({setTheme}) {
             </label>
             <ul tabIndex="0" className="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
               {/* PLACE HOLDERS, NEED TO IMPLEMENT USESTATES ON CLICK TO POP UP MODALS OF EXERCISES*/}
-              <li><a><b>WORKOUTS</b></a></li>
               <li><a><b>CALORIE CALCULATOR</b></a></li>
               <li><a><b>BMI CALCULATOR</b></a></li>
             </ul>
