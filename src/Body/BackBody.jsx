@@ -12,7 +12,7 @@ function BackBody() {
   };
 
   return(
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative", marginTop:"30px" }}>
       <svg viewBox="0 0 400 950" style={{ position: "absolute", top: 0, left: 0 }}>
       <rect
           id="SHOULDERS"
@@ -175,7 +175,7 @@ function BackBody() {
           onClick={handleMouseClick}            
         />
     </svg>
-    <img src={BackBodySvg} alt="Back Body" style={{ width: "100%", maxWidth: "400px",}}/>
+    <img src={BackBodySvg} alt="Back Body" style={{ width: "100%", maxWidth: "400px", maxHeight:"90%"}}/>
     {showModal && <ExcerciseModal muscleSelected={muscleSelected} setMuscleSelected={setMuscleSelected} setShowModal={setShowModal}/>}
     </div>
     )

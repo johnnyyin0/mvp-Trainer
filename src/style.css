@@ -2,6 +2,17 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* body {
+  background-image: url("src/assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+body {
+  background-color: rgb(240, 248, 255);
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -61,4 +72,45 @@
   height: 90%;
   max-height: 90%;
   overflow-y: auto;
+}
+
+.modal-box-calorie-calculator {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 50%;
+  width: 100%;
+  height: 85%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.modal-box-BMI-calculator {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 30%;
+  width: 100%;
+  height: 60%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.chat-box {
+  position: absolute;
+  bottom: 100%;
+  right: 10px;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
