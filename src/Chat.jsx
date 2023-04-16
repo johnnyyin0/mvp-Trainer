@@ -14,7 +14,7 @@ function Chat() {
         <input type="checkbox" onClick={handleClick} />
 
         <svg
-          class="swap-off fill-current"
+          class="swap-off fill-current mt-1 "
           xmlns="http://www.w3.org/2000/svg"
           width="32"
           height="32"

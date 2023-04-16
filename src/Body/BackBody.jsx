@@ -175,7 +175,7 @@ function BackBody() {
           onClick={handleMouseClick}            
         />
     </svg>
-    <img src={BackBodySvg} alt="Back Body" style={{ width: "100%", maxWidth: "400px", maxHeight:"90%"}}/>
+    <img src={BackBodySvg} alt="Back Body" style={{ width: "100%", maxWidth: "400px"}}/>
     {showModal && <ExcerciseModal muscleSelected={muscleSelected} setMuscleSelected={setMuscleSelected} setShowModal={setShowModal}/>}
     </div>
     )

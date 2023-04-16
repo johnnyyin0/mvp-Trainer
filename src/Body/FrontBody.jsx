@@ -145,7 +145,7 @@ function FrontBody() {
           onClick={handleMouseClick}
         />
       </svg>
-      <img src={frontBodySvg} alt="Front Body" style={{ width: "100%", maxWidth: "400px", maxHeight:"90%"}}/>
+      <img src={frontBodySvg} alt="Front Body" style={{ width: "100%", maxWidth: "400px"}}/>
       {showModal && <ExcerciseModal muscleSelected={muscleSelected} setMuscleSelected={setMuscleSelected} setShowModal={setShowModal}/>}
     </div>
   );
