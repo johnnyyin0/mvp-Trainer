@@ -54,7 +54,7 @@ function BMICalculator({ setShowBMIModal }) {
         {bmi && (
           <div>
             <h3 className="font-bold">Your BMI is: </h3>{bmi}
-            <p className="font-bold">Interpretation:</p> {bmi < 18.5 ? 'Underweight' : bmi >= 18.5 && bmi <= 24.9 ? 'Normal weight' : bmi >= 25 && bmi <= 29.9 ? 'Overweight' : 'Obese'}
+            <p className="font-bold">Result:</p> {bmi < 18.5 ? 'Underweight' : bmi >= 18.5 && bmi <= 24.9 ? 'Normal weight' : bmi >= 25 && bmi <= 29.9 ? 'Overweight' : 'Obese'}
           </div>
         )}
       </div>
