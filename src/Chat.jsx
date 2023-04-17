@@ -9,12 +9,12 @@ function Chat() {
   };
 
   return (
-    <div class="chat-button">
-      <label class="btn btn-circle swap swap-rotate mt-3">
+    <div className="chat-button">
+      <label className="btn btn-circle swap swap-rotate mt-3">
         <input type="checkbox" onClick={handleClick} />
 
         <svg
-          class="swap-off fill-current mt-1 "
+          className="swap-off fill-current mt-1 "
           xmlns="http://www.w3.org/2000/svg"
           width="32"
           height="32"
@@ -24,7 +24,7 @@ function Chat() {
         </svg>
 
         <svg
-          class="swap-on fill-current"
+          className="swap-on fill-current"
           xmlns="http://www.w3.org/2000/svg"
           width="32"
           height="32"
