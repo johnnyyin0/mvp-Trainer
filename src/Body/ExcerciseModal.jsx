@@ -1,6 +1,6 @@
 import ExcerciseList from './ExcerciseList';
 
-function ExerciseModal({ muscleSelected, setMuscleSelected, setShowModal }) {
+function ExerciseModal({ muscleSelected, setMuscleSelected, setShowModal, data }) {
   const handleClose = () => {
     setShowModal(false);
     setMuscleSelected([]);
@@ -10,7 +10,7 @@ function ExerciseModal({ muscleSelected, setMuscleSelected, setShowModal }) {
     <div className="modal-overlay">
       <div className="modal-box relative">
         <label className="close btn btn-sm btn-circle absolute right-2 top bg-neutral mr-2" onClick={handleClose}>X</label>
-        <ExcerciseList muscleSelected={muscleSelected} />
+        <ExcerciseList data={data} muscleSelected={muscleSelected}/>
       </div>
     </div>
   );

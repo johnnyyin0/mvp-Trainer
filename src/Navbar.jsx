@@ -91,8 +91,13 @@ function Navbar({ setTheme }) {
           </label>
           <ul
             tabIndex="0"
-            className="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-60 mt-4"
+            className="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-80 mt-4"
           >
+            <li>
+              <a>
+                <b>WEEKLY WORKOUT CALENDAR </b>
+              </a>
+            </li>
             <li>
               <a onClick={handleCalorieClick}>
                 <b>CALORIE CALCULATOR </b>

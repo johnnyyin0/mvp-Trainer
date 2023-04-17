@@ -1,12 +1,12 @@
 import Title from './Title.jsx'
 import BodyMap from './BodyMap.jsx'
 
-function Body() {
+function Body({data}) {
 
   return(
     <div>
       <Title/>
-      <BodyMap/>
+      <BodyMap data={data}/>
     </div>
   )
 }
