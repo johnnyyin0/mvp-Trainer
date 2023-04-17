@@ -12,7 +12,7 @@ function ChatBox() {
 
   return (
     <div className="chat-box">
-    
+
       <div className="header-chat bg-neutral">
         <h1 className="text-center text-white font-bold text-xl">Messages</h1>
       </div>
@@ -29,11 +29,14 @@ function ChatBox() {
         style={{
           display: "flex",
           alignItems: "center",
-          position: "absolute",
-          bottom: "0",
+          position: "fixed",
+          bottom: "90px",
           width: "100%",
+          maxWidth: "400px",
           padding: "10px",
           backgroundColor: "white",
+          borderBottomLeftRadius: "10px",
+          borderBottomRightRadius: "10px",
         }}
       >
         <input
