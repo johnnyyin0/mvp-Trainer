@@ -7,8 +7,8 @@ function ExerciseModal({ muscleSelected, setMuscleSelected, setShowModal, data }
   };
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-box relative">
+    <div className="modal-overlay" onClick={handleClose}>
+      <div className="modal-box relative" onClick={(event) => event.stopPropagation()}>
         <label className="close btn btn-sm btn-circle absolute right-2 top bg-neutral mr-2" onClick={handleClose}>X</label>
         <ExcerciseList data={data} muscleSelected={muscleSelected}/>
       </div>
