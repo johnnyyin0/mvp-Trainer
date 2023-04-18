@@ -2,9 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import axios from 'axios'
 
 function ChatBox() {
-  const [userMessages, setUserMessages] = useState([]);
-  const [botMessages, setBotMessages] = useState([])
-
+  const [messages, setMessages] = useState({ user: [], bot: [{ message: "Hey, it's ya boi Chad! How can I assist with your gains today?" }] });
   const chatContainerRef = useRef(null);
 
   const handleMessageSend = (event) => {
@@ -12,20 +10,18 @@ function ChatBox() {
     const messageInput = event.target.message;
     const message = messageInput.value.trim();
     if (message) {
-      setUserMessages([...userMessages, { message }]);
+      setMessages({ ...messages, user: [...messages.user, { message }] });
       messageInput.value = "";
     }
   };
 
   useEffect(() => {
-    const welcomeMessage = "Hey, I'm a Chad! How can I assist you today?";
-    setBotMessages([{ message: welcomeMessage }]);
     chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
-  }, []);
+  }, [messages]);
 
-  useEffect(() => {
-    chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
-  }, [userMessages, botMessages]);
+  const messageQuery = () => {
+    axios.get()
+  }
 
   return (
     <div className="chat-box" ref={chatContainerRef}>
@@ -33,17 +29,17 @@ function ChatBox() {
         <h1 className="text-center text-white font-bold text-xl mt-4">Messages</h1>
       </div>
       <div className="message-field">
-  {botMessages.map((message, index) => (
-    <div key={index} className="bot-messages chat chat-start mt-5 ml-4 mb-5">
-      <div className="chat-bubble">{message.message}</div>
-    </div>
-  ))}
-  {userMessages.map((message, index) => (
-    <div key={index} className="user-messages chat chat-end mt-5 mr-4 mb-5">
-      <div className="chat-bubble">{message.message}</div>
-    </div>
-  ))}
-</div>
+        {messages.bot.map((message, index) => (
+          <div key={index} className="bot-messages chat chat-start mt-5 ml-4 mb-5">
+            <div className="chat-bubble">{message.message}</div>
+          </div>
+        ))}
+        {messages.user.map((message, index) => (
+          <div key={index} className="user-messages chat chat-end mt-5 mr-4 mb-5">
+            <div className="chat-bubble">{message.message}</div>
+          </div>
+        ))}
+      </div>
       <form onSubmit={handleMessageSend} className="input-field">
         <input
           type="text"

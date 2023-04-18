@@ -7,7 +7,7 @@ import config from "../config.js"
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Body from './Body/Body';
-import Chat from './Chat'
+import ChatButton from './ChatButton'
 
 function App() {
   // const [theme, setTheme] = useState('light')
@@ -41,7 +41,7 @@ function App() {
     <React.Fragment>
       <Navbar/>
       <Body data={data}/>
-      <Chat/>
+      <ChatButton/>
       <Footer />
     </React.Fragment>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ChatBox from "./ChatBox";
 
-function Chat() {
+function ChatButton() {
   const [showChatBox, setShowChatBox] = useState(false);
 
   const handleClick = () => {
@@ -38,4 +38,4 @@ function Chat() {
   );
 }
 
-export default Chat;
+export default ChatButton;
