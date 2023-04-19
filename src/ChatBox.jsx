@@ -1,20 +1,43 @@
 import React, { useState, useRef, useEffect } from "react";
-import axios from 'axios'
 import config from '../config'
-
-console.log('MY KEY:', config.OPENAI_API_KEY)
+import { Configuration, OpenAIApi } from "openai"
 
 function ChatBox() {
   const [messages, setMessages] = useState({ user: [], bot: [{ message: "Hey, it's ya boi Chad! How can I assist with your gains today?" }] });
   const chatContainerRef = useRef(null);
 
-  const handleMessageSend = (event) => {
+  const handleMessageSend = async (event) => {
     event.preventDefault();
     const messageInput = event.target.message;
     const message = messageInput.value.trim();
     if (message) {
       setMessages({ ...messages, user: [...messages.user, { message }] });
       messageInput.value = "";
+
+      try {
+        const openai = new OpenAIApi(new Configuration({
+          apiKey: config.OPENAI_API_KEY,
+          headers: {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+          },
+        }))
+
+        const response = await openai.createChatCompletion({
+          model: "text-davinci-002",
+          prompt: `The following is a conversation with an AI assistant. The assistant helps with fitness related queries.
+          Human: ${message}
+          AI:`,
+          max_tokens: 100,
+          temperature: 0.7,
+          n: 1,
+          stop: "\n",
+        })
+
+        setMessages({ ...messages, bot: [...messages.bot, { message: response.data.choices[0].text }] });
+      } catch (error) {
+        console.error(error)
+        alert("An error occurred while sending the message. Please try again later.");
+      }
     }
   };
 
@@ -29,12 +52,12 @@ function ChatBox() {
       </div>
       <div className="message-field">
         {messages.bot.map((message, index) => (
-          <div key={index} className="bot-messages chat chat-start mt-5 ml-4 mb-5">
+          <div key={index} className="bot-messages chat chat-start mt-5 ml-5 mb-5">
             <div className="chat-bubble">{message.message}</div>
           </div>
         ))}
         {messages.user.map((message, index) => (
-          <div key={index} className="user-messages chat chat-end mt-5 mr-4 mb-5">
+          <div key={index} className="user-messages chat chat-end mt-5 mr-5 mb-5">
             <div className="chat-bubble">{message.message}</div>
           </div>
         ))}

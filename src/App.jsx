@@ -10,11 +10,11 @@ import Body from './Body/Body';
 import ChatButton from './ChatButton'
 
 function App() {
-  // const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('light')
 
-  // useEffect(()=> {
-  //   document.querySelector('html').setAttribute('data-theme', theme)
-  // },[theme])
+  useEffect(()=> {
+    document.querySelector('html').setAttribute('data-theme', theme)
+  },[theme])
 
   const [data, setData] = useState([])
 
@@ -40,7 +40,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <Navbar/>
+      <Navbar setTheme={setTheme}/>
       <Body data={data}/>
       <ChatButton/>
       <Footer />
