@@ -10,32 +10,34 @@ function ChatBox() {
     event.preventDefault();
     const messageInput = event.target.message;
     const message = messageInput.value.trim();
+  
     if (message) {
-      setMessages({ ...messages, user: [...messages.user, { message }] });
+      setMessages(prevState => ({
+        bot: [...prevState.bot],
+        user: [...prevState.user, { message }],
+      }));
+  
       messageInput.value = "";
-
+  
       try {
         const openai = new OpenAIApi(new Configuration({
-          apiKey: config.OPENAI_API_KEY,
-          headers: {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
-          },
-        }))
-
+          apiKey: config.OPENAI_API_KEY
+        }));
+  
         const response = await openai.createChatCompletion({
-          model: "text-davinci-002",
-          prompt: `The following is a conversation with an AI assistant. The assistant helps with fitness related queries.
-          Human: ${message}
-          AI:`,
-          max_tokens: 100,
-          temperature: 0.7,
-          n: 1,
-          stop: "\n",
-        })
-
-        setMessages({ ...messages, bot: [...messages.bot, { message: response.data.choices[0].text }] });
+          model: "gpt-3.5-turbo",
+          messages: [{ role: "user", content: `${message}` }]
+        });
+  
+        setMessages(prevState => ({
+          user: [...prevState.user],
+          bot: [
+            ...prevState.bot,
+            { message: response.data.choices[0].message.content }
+          ]
+        }));
       } catch (error) {
-        console.error(error)
+        console.error(error);
         alert("An error occurred while sending the message. Please try again later.");
       }
     }
