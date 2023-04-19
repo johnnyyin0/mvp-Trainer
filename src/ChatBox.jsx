@@ -2,8 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import config from '../config'
 import { Configuration, OpenAIApi } from "openai"
 
-function ChatBox() {
-  const [messages, setMessages] = useState([{bot: "Hey, it's ya boi Chad! How can I assist with your gains today?"}]);
+function ChatBox({messages, setMessages}) {
+  // const [messages, setMessages] = useState([{bot: "Hey, it's ya boi Chad! How can I assist with your gains today?"}]);
+  const [isTyping, setIsTyping] = useState(false);
   const chatContainerRef = useRef(null);
 
   const handleMessageSend = async (event) => {
@@ -16,6 +17,8 @@ function ChatBox() {
       setMessages([...messages, newMessage]);
       messageInput.value = '';
 
+      setIsTyping(true);
+
       try {
         const openai = new OpenAIApi(new Configuration({
           apiKey: config.OPENAI_API_KEY
@@ -25,12 +28,15 @@ function ChatBox() {
           model: "gpt-3.5-turbo",
           messages: [{ role: "user", content: `${message}` }]
         });
+
         const newMessages = [...messages, { user: message }, { bot: response.data.choices[0].message.content}];
         setMessages(newMessages);
+        setIsTyping(false);
       
-      } catch (error) {
+      } catch(error) {
         console.error(error);
         alert("An error occurred while sending the message. Please try again later.");
+        setIsTyping(false);
       }
     }
   };
@@ -45,15 +51,20 @@ function ChatBox() {
         <h1 className="text-center text-white font-bold text-xl mt-5">Messages</h1>
       </div>
       <div className="message-field">
-  {messages.map((message, index) => (
-    <div
-      key={index}
-      className={`chat ${message.user ? 'chat-end' : 'chat-start'} p-5`}
-    >
-      <div className="chat-bubble">{message.user || message.bot}</div>
-    </div>
-  ))}
-</div>
+        {messages.map((message, index) => (
+          <div
+            key={index}
+            className={`chat ${message.user ? 'chat-end' : 'chat-start'} p-5`}
+          >
+            <div className="chat-bubble">{message.user || message.bot}</div>
+          </div>
+        ))}
+        {isTyping && (
+          <div className="chat chat-start p-5">
+            <div className="chat-bubble"><i>Chad is typing...</i></div>
+          </div>
+        )}
+      </div>
       <form onSubmit={handleMessageSend} className="input-field">
         <input
           type="text"
