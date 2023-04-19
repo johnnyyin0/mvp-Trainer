@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './style.css';
 import axios from 'axios';
-import config from "../config.js"
+import config from '../config';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -18,12 +18,13 @@ function App() {
 
   const [data, setData] = useState([])
 
+
   useEffect(()=> {
     const options = {
       method: 'GET',
       url: 'https://musclewiki.p.rapidapi.com/exercises',
       headers: {
-        'X-RapidAPI-Key': config.KEY,
+        'X-RapidAPI-Key': config.MUSCLEWIKI_API_KEY,
         'X-RapidAPI-Host': config.HOST,
       },
     };

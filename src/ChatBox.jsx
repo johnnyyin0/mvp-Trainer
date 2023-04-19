@@ -1,5 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import axios from 'axios'
+import config from '../config'
+
+console.log('MY KEY:', config.OPENAI_API_KEY)
 
 function ChatBox() {
   const [messages, setMessages] = useState({ user: [], bot: [{ message: "Hey, it's ya boi Chad! How can I assist with your gains today?" }] });
@@ -18,10 +21,6 @@ function ChatBox() {
   useEffect(() => {
     chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
   }, [messages]);
-
-  const messageQuery = () => {
-    axios.get()
-  }
 
   return (
     <div className="chat-box" ref={chatContainerRef}>
